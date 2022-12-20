@@ -10,7 +10,7 @@ mongodb_password = quote_plus(mongodb_password)
 connect_string = f'mongodb+srv://hdttuan:{mongodb_password}@cluster0.h09da4d.mongodb.net/?retryWrites=true&w=majority'
 
 crawlClient = pymongo.MongoClient(connect_string)
-crawlClient = crawlClient['TRACKINGINVESTMENT_CRAWL']
+crawlDB = crawlClient['TRACKINGINVESTMENT_CRAWL']
 
 personal_mongodb_password = os.environ['personal_mongodb_password']
 personal_mongodb_password = quote_plus(personal_mongodb_password)
