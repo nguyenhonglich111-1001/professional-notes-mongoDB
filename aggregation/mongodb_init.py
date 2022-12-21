@@ -19,6 +19,8 @@ personal_connection_string = f'mongodb+srv://lichnh:{personal_mongodb_password}@
 
 personal_client = pymongo.MongoClient(personal_connection_string)
 codingDB = personal_client['coding']
+employeeDocs = codingDB['employees']
+
 
 
 
